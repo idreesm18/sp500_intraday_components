@@ -1,0 +1,12 @@
+- As shown at the bottom of Divisor_fame_entry.png, the
+datafinder entry number for SP500 series in fame is 
+e1000532. 
+
+- Searching e1000532 on RL on Record #, as shown in 
+Divisor_research_library_entry.png, returns the same
+S&P Dow Jones Indices source. There currently is not
+a way to directly search using Record # on RL, so you
+can also confirm that it is the same entry number by
+accessing S&P Dow Jones Indices using the following
+link which has e1000532 in it.
+  - https://library.frb.gov/record=e1000532~S1

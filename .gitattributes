@@ -1,0 +1,20 @@
+# Normalize all text files to LF in the repo
+* text=auto eol=lf
+
+# Windows-specific scripts that need CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Shell scripts stay LF
+*.sh text eol=lf
+
+# Data/binary formats (never touch line endings)
+*.dta binary
+*.xlsx binary
+*.parquet binary
+*.png binary
+*.jpg binary
+
+# CSVs as text with LF for portability
+*.csv text eol=lf

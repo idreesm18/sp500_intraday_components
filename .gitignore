@@ -1,0 +1,14 @@
+# ----------------------------
+# Data files to ignore
+# ----------------------------
+*.[dD][tT][aA]        # .dta (Stata)
+*.[cC][sS][vV]        # .csv
+*.[xX][lL][sS][xX]    # .xlsx
+
+# ----------------------------
+# Overrides: keep specific files
+# (Add paths relative to repo root.)
+# ----------------------------
+#!data/keep_this.csv
+#!docs/sample.xlsx
+#!analysis/example.dta
