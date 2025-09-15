@@ -2,4 +2,6 @@
     - code file explanations
     - Input datasets
     - Output datasets
+    - detail inconsistencies
 - Add handmade reference csv's/xlsx's 
+- Add documentation for what I used to pull certain files (cusip-permco link)

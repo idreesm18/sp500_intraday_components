@@ -114,7 +114,7 @@ save "cleaned_files/cusip_entry_exit_periods_1994_2024.dta", replace
 *****************
 *Fix anomalies in data
 //export excel using "cleaned_files/cusip_entry_exit_periods_1994_2024.xlsx", sheet("Main") firstrow(variables)
-use "source_data/WRDS/cusip_permco_linking.dta", clear
+/* use "source_data/WRDS/cusip_permco_linking.dta", clear
 drop PrimaryExch PERMNO
 rename CUSIP9 cusip9
 format PERMCO %8.0g
@@ -213,4 +213,4 @@ order cusip9 cusip8 cusip6
 merge m:1 cusip8 using "temp_files/WRDS/full_crsp_taq_link.dta"
 drop if _merge == 2
 keep if _merge == 1
-sort SP500_start_1
+sort SP500_start_1 */
