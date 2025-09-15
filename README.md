@@ -1,4 +1,4 @@
-# S&P 500 Intraday Components Replication Project
+# S&P 500 Intraday Components Pricing
 
 This project reconstructs intraday (5 minute) S&P 500 index constituent stock prices and weights from 1994-2024. The codebase processes data from multiple sources (WRDS TAQ, CRSP, S&P/Dow Jones indices) to create a comprehensive dataset for financial research.
 
@@ -46,3 +46,14 @@ This project reconstructs intraday (5 minute) S&P 500 index constituent stock pr
 - **a06_permcolinking.do**: Links CUSIPs to PERMCO/PERMNO identifiers
     - Links CUSIP-PERMNO-PERMCO and attaches it to reference document
 
+### a02_download_TAQ_data/
+**Purpose**: Download intraday price data at a 5-minute frequency for the respective stocks.
+
+#### Code Files:
+- **a01_pull_TAQ_intraday.py**: Query used in WRDS Jupyter lab to pull pricing data from TAQMSEC (2004-2024)
+- **a02_pull_pre2004_TAQ_intraday.sas**: Query used in WRDS SAS Studio to pull pricing data from TAQ (1994-2003)
+
+### a03_intraday_SP500_replication/
+**Purpose**: Create the final dataset
+
+#### Code Files:
