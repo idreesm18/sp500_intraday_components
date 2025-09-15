@@ -1,0 +1,5 @@
+- Finish README.md
+    - code file explanations
+    - Input datasets
+    - Output datasets
+- Add handmade reference csv's/xlsx's 

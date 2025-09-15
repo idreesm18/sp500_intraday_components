@@ -1,4 +1,4 @@
-# S&P 500 Intraday Components Pricing
+# S&P 500 Components Intraday Pricing
 
 This project reconstructs intraday (5 minute) S&P 500 index constituent stock prices and weights from 1994-2024. The codebase processes data from multiple sources (WRDS TAQ, CRSP, S&P/Dow Jones indices) to create a comprehensive dataset for financial research.
 
@@ -6,10 +6,10 @@ This project reconstructs intraday (5 minute) S&P 500 index constituent stock pr
 
 ### a01_create_SP500_weights/
 **Purpose**: Construct the *daily S&P 500 constituent set* at the PERMCO level. This stage:
-    - Determines membership for each calendar day 
-    - Builds an effective-dated crosswalk linking CUSIP, symbol, and PERMCO, 
-    - Enforces issuer-level membership to permit composite treatment of dual-class or tracking shares
-    - Reconciles cross-source inconsistencies (identifier changes, vendor discrepancies) under explicit precedence rules. 
+    (1) Determines membership for each calendar day 
+    (2) Builds an effective-dated crosswalk linking CUSIP, symbol, and PERMCO, 
+    (3) Enforces issuer-level membership to permit composite treatment of dual-class or tracking shares
+    (4) Reconciles cross-source inconsistencies (identifier changes, vendor discrepancies) under explicit precedence rules. 
 
 #### Code Files:
 - **a01_downloadData.py**: Downloads S&P 500 constituent data from S&P databases
@@ -57,3 +57,6 @@ This project reconstructs intraday (5 minute) S&P 500 index constituent stock pr
 **Purpose**: Create the final dataset
 
 #### Code Files:
+- **a01_createSP500_5min.do**: Processes S&P 500 benchmark data from TRTH
+    - Imports and cleans Thomson Reuters Tick History (TRTH) S&P 500 data
+    - Creates 5-minute interval benchmark for validation
